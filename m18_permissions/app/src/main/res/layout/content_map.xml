@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <com.yandex.mapkit.mapview.MapView
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Назад" />
+
+        <ImageButton
+            android:id="@+id/minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/back"
+            android:layout_marginStart="13dp"
+            android:layout_marginBottom="-19dp"
+            android:layout_toEndOf="@+id/back"
+            android:src="@drawable/remove_48px" />
+
+        <ImageButton
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/minus"
+            android:layout_marginStart="33dp"
+            android:layout_marginBottom="1dp"
+            android:layout_toEndOf="@+id/minus"
+            android:src="@drawable/add_48px" />
+    </com.yandex.mapkit.mapview.MapView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
